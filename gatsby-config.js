@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: `/example-gatsby-unstated`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'example-gatsby-unstated',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "example-gatsby-unstated",
+  "description": "An example of usage Unstated state container with GatsbyJS",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "greg lobinski <greglobinski@gmail.com>",
   "dependencies": {
     "gatsby": "next",
     "gatsby-plugin-react-helmet": "next",
@@ -19,9 +19,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "prettier": "^1.13.7"
   },
   "repository": {
