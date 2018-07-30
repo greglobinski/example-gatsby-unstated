@@ -1,5 +1,7 @@
 # This is an example of usage Unstated state container with GatsbyJS
 
+> [Live Demo](https://greglobinski.github.io/example-gatsby-unstated/)
+
 To use unstated in a Gatsby site you'll need to hook in to two of Gatsby's
 extension points.
 
@@ -8,4 +10,3 @@ and once in `replaceRouterComponent` which is part of Gatsby's browser APIs.
 
 Check out [`./gatsby-ssr.js`](./gatsby-ssr.js) and
 [`./gatsby-browser.js`](./gatsby-browser.js) to see how this is implemented in this example.
-
