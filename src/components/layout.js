@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { Subscribe } from 'unstated'
-import CounterContainer from '../state/CounterContainer'
+import Counter from './counter'
 
 import Header from './header'
 import './layout.css'
@@ -39,23 +38,7 @@ const Layout = ({ children, data }) => (
         >
           {children}
 
-          <Subscribe to={[CounterContainer]}>
-            {counter => (
-              <div
-                style={{
-                  margin: '20px 0 0 0',
-                  padding: '10px 15px',
-                  border: '1px solid black',
-                  display: 'flex',
-                  justifyContent: 'space-around',
-                }}
-              >
-                <button onClick={() => counter.decrement()}>-</button>
-                <span>Count: {counter.state.count}</span>
-                <button onClick={() => counter.increment()}>+</button>
-              </div>
-            )}
-          </Subscribe>
+          <Counter />
         </div>
       </>
     )}

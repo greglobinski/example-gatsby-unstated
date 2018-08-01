@@ -19,12 +19,24 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "@babel/preset-react": "^7.0.0-beta.55",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.5",
     "gh-pages": "^1.2.0",
-    "prettier": "^1.13.7"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.4.2",
+    "prettier": "^1.13.7",
+    "react-test-renderer": "^16.4.1",
+    "react-testing-library": "^4.1.5"
   },
   "repository": {
     "type": "git",
